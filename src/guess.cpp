@@ -66,17 +66,17 @@ int main(int argc, char *argv[]) {
         }
 
         // Cheat code: auto
-        if (strcmp(user_guess, "auto")) {
+        if (strcmp(user_guess, "auto") == 0) {
             cheated = cheat = true;
             int suggested = (min + max) / 2;
             guess = suggested;
         // Cheat code: supercheat
-        } else if (strcmp(user_guess, "supercheat")) {
+        } else if (strcmp(user_guess, "super") == 0) {
             cheated = true;
             cout << "Answer is " << target << endl;
             continue;
         // Cheat code: reset (count)
-        } else if (strcmp(user_guess, "reset")) {
+        } else if (strcmp(user_guess, "reset") == 0) {
             cheated = true;
             cout << "Resetted" << endl;
             count = 1;

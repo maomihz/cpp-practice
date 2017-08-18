@@ -1,4 +1,4 @@
-CC = g++
+CC = clang++
 CFLAGS = -g -Wall
 SOURCES = $(wildcard src/*.cpp)
 TARGETS = $(notdir $(SOURCES:%.cpp=%))
